@@ -72,26 +72,14 @@ After downloading, extract the data to a local directory. You'll need to specify
 ### Running the Baseline Models
 
 ```bash
-python oldBaseline.py --data_dir "path/to/data/directory" [options]
+python oldBaseline.py --data_dir "path/to/data/directory"
 ```
-
-Options:
-- `--use_manual`: Use manually rewritten queries if available
-- `--models`: Which models to evaluate (BM25-raw, BERT-raw, ColBERT-raw, ZeCo², all)
-- `--verbose`: Enable verbose logging
-- `--cuda`: Use CUDA for BERT models if available
 
 ### Running the ZeRA and ZeRA-DT Models
 
 ```bash
-python newMethod.py --data_dir "path/to/data/directory" [options]
+python newMethod.py --data_dir "path/to/data/directory" 
 ```
-
-Options:
-- `--use_manual`: Use manually rewritten queries if available
-- `--models`: Which models to evaluate (ZeRA, ZeRA-DT, both)
-- `--verbose`: Enable verbose logging
-- `--cuda`: Use CUDA for BERT models if available
 
 ## Methods
 

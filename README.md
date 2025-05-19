@@ -1,4 +1,4 @@
-# Dynamic Parameter Adaptation for Zero-shot Response-Aware Conversational Retrieval
+# CS274 Final Project - Dynamic Parameter Adaptation for Zero-shot Response-Aware Conversational Retrieval
 
 This repository contains the implementation of the ZeRA-DT (Zero-shot Response-Aware with Dynamic Thresholds) method for conversational information retrieval, alongside baseline implementations. The code evaluates different retrieval approaches on the TREC CAsT-2019 dataset.
 

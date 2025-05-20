@@ -35,7 +35,7 @@ ZeRA-DT dynamically adjusts expansion weights based on conversation depth, provi
   - ColBERT (late interaction retrieval)
   - ZeCo² (context-aware retrieval)
   - ZeRA (zero-shot response-aware retrieval)
-  - ZeRA-DT (our proposed dynamic parameter adaptation method)
+  - ZeRA-DT (proposed dynamic parameter adaptation method)
 - Evaluation on TREC CAsT-2019 dataset
 - Support for both raw and manually rewritten queries
 - Comprehensive evaluation metrics (MRR, NDCG@3, R@100)
@@ -43,11 +43,6 @@ ZeRA-DT dynamically adjusts expansion weights based on conversation depth, provi
 ## Installation
 
 1. Clone this repository:
-```bash
-git clone https://github.com/yourusername/conversational-retrieval.git
-cd conversational-retrieval
-```
-
 2. Install the required dependencies:
 ```bash
 pip install torch transformers tqdm numpy
@@ -98,7 +93,7 @@ A context-aware extension of ColBERT that creates an enhanced query representati
 ### ZeRA
 Zero-shot Response-Aware method combines three levels of query expansion (term-level, sentence-level, and passage-level) with static weighting parameters to enhance retrieval performance without requiring training data.
 
-### ZeRA-DT (Our Proposed Method)
+### ZeRA-DT (Proposed Method)
 ZeRA with Dynamic Thresholds extends ZeRA by adaptively adjusting expansion weights based on conversation depth. Early turns benefit from stronger term matching, while later turns require more contextual influence as the conversation evolves.
 
 Weights for different turn depths:
@@ -113,8 +108,6 @@ Weights for different turn depths:
 - **R@100 (Recall at 100)**: Measures the proportion of relevant documents found in the top 100 ranked results.
 
 ## Results
-
-Our experiments show that while ZeRA achieves strong performance with fixed parameters, ZeRA-DT's dynamic parameter adaptation further enhances retrieval quality, especially for longer conversations. Due to sampling variability in our limited-index evaluation, performance fluctuates between evaluation runs, but ZeRA-DT consistently outperforms most baseline methods.
 
 Sample results on CAsT-2019 dataset:
 
@@ -135,7 +128,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - The ZeRA method is based on the work by Wang et al. [1]
 - We use the TREC CAsT-2019 dataset for evaluation
-- Our implementations of BM25, BERT, and ColBERT are simplified versions for research purposes
+- Implementations of BM25, BERT, and ColBERT are simplified versions for research purposes
 
 ## References
 
